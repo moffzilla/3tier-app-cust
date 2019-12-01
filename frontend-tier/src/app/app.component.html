@@ -1,0 +1,41 @@
+<div class="main-container">
+    <header class="header-6">
+        <div class="branding">
+            <a href="/" class="nav-link">
+                <clr-icon shape="vm"></clr-icon>
+                <span class="title">VMwareCAS DemoApp</span>
+            </a>
+        </div>
+    </header>
+    <nav class="subnav">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://cloud.vmware.com/" target="_blank">Cloud Services Page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://blogs.vmware.com/management" target="_blank">VMware Management Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://gitlab.com/codyde/cas-blueprints" target="_blank">CAS Blueprints Gitlab</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://code.vmware.com/samples" target="_blank">VMware CODE Samples</a>
+                </li>
+            </ul>
+        </nav>
+    <div class="content-container">
+        <div class="content-area">
+            <router-outlet></router-outlet>
+        </div>
+        <clr-vertical-nav [clrVerticalNavCollapsible]="true">
+                <a clrVerticalNavLink routerLink="/home" routerLinkActive="active">
+                    <clr-icon clrVerticalNavIcon shape="home"></clr-icon>Home</a>
+                <a clrVerticalNavLink routerLink="/messaging" routerLinkActive="active">
+                    <clr-icon clrVerticalNavIcon shape="talk-bubbles"></clr-icon>Messaging</a>
+                <a clrVerticalNavLink routerLink="/detail" routerLinkActive="active">
+                    <clr-icon clrVerticalNavIcon shape="cloud-traffic"></clr-icon>CAS API Query</a>
+                <div class="nav-divider"></div>
+                <a clrVerticalNavLink routerLink="./credit" routerLinkActive="active">
+                    <clr-icon clrVerticalNavIcon shape="user"></clr-icon>Credit</a>
+            </clr-vertical-nav>
+    </div>
